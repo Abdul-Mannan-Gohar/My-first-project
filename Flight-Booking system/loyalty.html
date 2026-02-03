@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyHigh Loyalty Program</title>
+ <link rel="stylesheet" href="css/loyalty.css">
+<!-- And use Font Awesome CDN (replace the kit line if used earlier) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo"><a href="index.html">Sky<span>High</span></a></div>
+    <div class="icons">
+   <a href="login.html" > <i class="fas fa-user-circle" title="Login"></i></a>
+      <i class="fas fa-bars menu-icon" onclick="openNav()" title="Menu"></i>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <span class="closebtn" onclick="closeNav()">&times;</span>
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="book.html"><i class="fas fa-plane-departure"></i> Book</a>
+    <a href="manage.html"><i class="fas fa-cog"></i> Manage</a>
+    <a href="experience.html"><i class="fas fa-globe"></i> Experience</a>
+    <a href="destination.html"><i class="fas fa-map-marked-alt"></i> Where We Fly</a>
+    <a href="help.html"><i class="fas fa-question-circle"></i> Help</a>
+    <a href="feedback.html"><i class="fas fa-comment"></i> Leave Feedback</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" style="background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/912050/pexels-photo-912050.jpeg') center/cover no-repeat;">
+    <h1>SkyHigh Loyalty Program</h1>
+    <p>Fly more. Earn more. Enjoy exclusive benefits and rewards every time you travel with SkyHigh.</p>
+  </section>
+
+  <!-- Loyalty Overview -->
+  <section class="loyalty-overview">
+    <h2>Why Join Our Loyalty Program?</h2>
+    <div class="features">
+      <div class="feature">
+        <i class="fas fa-coins"></i>
+        <h4>Earn Points</h4>
+        <p>Earn SkyPoints on every flight, hotel stay, and partner purchase.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-gift"></i>
+        <h4>Redeem Rewards</h4>
+        <p>Use your points for free tickets, seat upgrades, and exclusive offers.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-user-shield"></i>
+        <h4>Member Privileges</h4>
+        <p>Get priority boarding, lounge access, and special discounts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership Tiers -->
+  <section class="tiers">
+    <h2>Membership Levels</h2>
+    <div class="tier-cards">
+      <div class="tier-card silver">
+        <h3>Silver Member</h3>
+        <p>Start earning points from your very first flight.</p>
+        <ul>
+          <li>✔ 5% bonus points</li>
+          <li>✔ Priority check-in</li>
+          <li>✔ Member-only offers</li>
+        </ul>
+      </div>
+      <div class="tier-card gold">
+        <h3>Gold Member</h3>
+        <p>Fly 5+ times a year to unlock Gold rewards.</p>
+        <ul>
+          <li>✔ 10% bonus points</li>
+          <li>✔ Free seat upgrades</li>
+          <li>✔ Airport lounge access</li>
+        </ul>
+      </div>
+      <div class="tier-card platinum">
+        <h3>Platinum Member</h3>
+        <p>For our most loyal travelers with exclusive perks.</p>
+        <ul>
+          <li>✔ 20% bonus points</li>
+          <li>✔ VIP lounge + chauffeur service</li>
+          <li>✔ 24/7 premium support</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Earn -->
+  <section class="earn">
+    <h2>How to Earn SkyPoints</h2>
+    <div class="earn-steps">
+      <div class="step"><i class="fas fa-plane"></i><p>Book flights on SkyHigh.com</p></div>
+      <div class="step"><i class="fas fa-hotel"></i><p>Stay at partner hotels</p></div>
+      <div class="step"><i class="fas fa-credit-card"></i><p>Shop with our partner cards</p></div>
+    </div>
+  </section>
+
+  <!-- Join Now -->
+  <section class="join">
+    <h2>Ready to Start Earning?</h2>
+    <p>Join our Loyalty Program today and turn your journeys into rewards.</p>
+    <a href="#" class="join-btn">Join Now</a>
+  </section>
+
+  <!-- Footer -->
+   <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <a href="#">Company Info</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+      </div>
+      <div class="footer-column">
+        <h3>Help</h3>
+        <a href="#">FAQs</a>
+        <a href="#">Customer Support</a>
+        <a href="#">Booking Guide</a>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <div class="social-icons">
+          <div class="social-icons">
+   <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Sky High Airlines. All Rights Reserved. | Terms & Policy</p>
+    </div>
+  </footer>
+
+  <script>
+    function openNav() {
+      document.getElementById("sidebar").style.width = "250px";
+    }
+    function closeNav() {
+      document.getElementById("sidebar").style.width = "0";
+    }
+  </script>
+</body>
+</html>

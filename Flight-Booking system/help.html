@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Help Center | SkyVoyage Flights</title>
+  <link rel="stylesheet" href="css/help.css"/> <!-- Your existing CSS file -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+ 
+</head>
+<body>
+
+<!-- ==================== HEADER ==================== -->
+<header>
+  <div class="logo">Sky<span>High</span></div>
+  <div class="icons">
+   
+    <a href="login.html" > <i class="fas fa-user-circle" title="Login"></i></a>
+    <i class="fas fa-bars" onclick="openMenu()" title="Menu"></i>
+  </div>
+</header>
+
+<!-- ==================== RIGHT SIDEBAR ==================== -->
+ <div id="sidebarMenu" class="sidebar">
+      <span class="closebtn" onclick="closeMenu()">
+  <i class="fa-solid fa-xmark"></i></span>
+    <a href="book.html"><i class="fas fa-plane-departure"></i> Book</a>
+    <a href="manage.html"><i class="fas fa-cog"></i> Manage</a>
+    <a href="experience.html"><i class="fas fa-globe"></i> Experience</a>
+    <a href="destination.html"><i class="fas fa-map-marked-alt"></i> Where We Fly</a>
+    <a href="loyalty.html"><i class="fas fa-gem"></i> Loyalty</a>
+    <a href="help.html"><i class="fas fa-question-circle"></i> Help</a>
+    <a href="feedback.html"><i class="fas fa-comment"></i> Leave Feedback</a>
+  </div>
+
+<!-- ==================== MAIN CONTENT ==================== -->
+<main>
+  <h1 class="page-title">Help Center</h1>
+  <p style="text-align:center; font-size:1.2em; color:#0f1e33; margin-bottom:50px;">
+    Find answers to the most common questions. Still need help? We’re here 24/7.
+  </p>
+
+  <!-- Booking -->
+  <section class="faq-section">
+    <h2>1. Booking a Flight</h2>
+    <details><summary>How do I search and book a flight?</summary><p>Go to the homepage → Fill in departure, destination, dates & passengers → Click “Search Flights” → Choose your flight → Enter passenger details → Complete secure payment.</p></details>
+    <details><summary>Can I book for someone else?</summary><p>Yes! Just enter their full name exactly as it appears on their passport/ID.</p></details>
+    <details><summary>What payment methods do you accept?</summary><p>Visa, MasterCard, Amex, PayPal, Apple Pay, Google Pay, Klarna, Affirm (availability depends on your country).</p></details>
+    <details><summary>I didn’t receive my confirmation email</summary><p>Check your spam/junk folder first. Still missing? Go to “Manage Booking” with your reference number and last name to view or resend it.</p></details>
+  </section>
+
+  <!-- Manage Booking -->
+  <section class="faq-section">
+    <h2>2. Managing My Booking</h2>
+    <details><summary>How do I retrieve my booking?</summary><p>Click “Manage Booking” → Enter your 6-character booking reference (e.g., ABC123) and the passenger’s last name.</p></details>
+    <details><summary>Can I change or correct a name?</summary><p>Minor spelling corrections are free within 24 hours. Full name changes are usually not permitted for security reasons.</p></details>
+    <details><summary>How do I select or change my seat?</summary><p>In “Manage Booking” → Seat Selection (small fee may apply depending on fare).</p></details>
+  </section>
+
+  <!-- Payment -->
+  <section class="faq-section">
+    <h2>3. Payment Issues</h2>
+    <details><summary>Why was my payment declined?</summary><p>Common reasons: incorrect CVV/expiry, insufficient funds, or your bank flagged the transaction. Try another card or contact your bank.</p></details>
+    <details><summary>Can I pay in installments?</summary><p>Yes — Klarna, Affirm, and PayPal Credit are available at checkout in supported countries.</p></details>
+  </section>
+
+  <!-- Check-in -->
+  <section class="faq-section">
+    <h2>4. Check-in & Boarding</h2>
+    <details><summary>When does online check-in open?</summary><p>48 hours before international flights, 24 hours before domestic flights.</p></details>
+    <details><summary>Do I need to print my boarding pass?</summary><p>No — mobile boarding passes are accepted at almost all airports.</p></details>
+  </section>
+
+  <!-- Baggage -->
+  <section class="faq-section">
+    <h2>5. Baggage Allowance</h2>
+    <details><summary>What baggage is included?</summary><p>Economy: 1 carry-on (7 kg) + 1 personal item<br>Premium/Business: 2 carry-ons + 1 checked bag (23 kg)</p></details>
+    <details><summary>How to add extra baggage?</summary><p>Cheapest online via “Manage Booking” → Extra Services. More expensive at the airport.</p></details>
+  </section>
+
+  <!-- Changes & Cancellations -->
+  <section class="faq-section">
+    <h2>6. Flight Changes & Cancellations</h2>
+    <details><summary>Can I change my flight date/time?</summary><p>Flexible fares → free changes<br>Standard fares → change fee + fare difference<br>Changes allowed up to 3 hours before departure.</p></details>
+    <details><summary>What is the cancellation policy?</summary><p>• Within 24h of booking (flight 7+ days away) → full refund<br>• Non-refundable tickets → only taxes refunded<br>• Flexible tickets → full or partial refund</p></details>
+    <details><summary>My flight was cancelled by the airline</summary><p>You are entitled to a full refund OR free rebooking + meals/hotel if needed. EU/UK flights may qualify for up to €600 compensation (EU261).</p></details>
+  </section>
+
+  <!-- Special Assistance -->
+  <section class="faq-section">
+    <h2>7. Special Assistance</h2>
+    <details><summary>How do I request wheelchair assistance?</summary><p>Request at least 48 hours before departure in “Manage Booking” → Special Assistance.</p></details>
+    <details><summary>Can I travel with a service dog?</summary><p>Yes, free of charge in the cabin. Upload required documents 48 hours in advance.</p></details>
+  </section>
+
+  <!-- Contact Box -->
+  <div class="contact-box">
+    <h2>Still Need Help?</h2>
+    <p style="font-size:1.3em; margin:20px 0;">
+      <i class="fas fa-envelope"></i> Email: <a href="mailto:support@skyvoyage.com">man325329@gmail.com</a><br><br>
+      <i class="fas fa-phone"></i> Call: <strong>+92 3349220235</strong> (24/7)<br><br>
+      <i class="fab fa-twitter"></i> Tweet us: <a href="#">@SkyVoyageHelp</a>
+    </p>
+  </div>
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>SkyVoyage</h3>
+      <p>Your trusted partner for seamless flight bookings worldwide.</p>
+    </div>
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="book.html">Book Flight</a>
+      <a href="help.html">Help Center</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-column">
+      <h3>Support</h3>
+      <a href="mailto:support@skyvoyage.com">man325329@gmail.com</a>
+      <a href="tel:+1800555359">+92 3349220235</a>
+    </div>
+    <div class="footer-column social-icons">
+      <h3>Follow Us</h3>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+     © 2025 Sky High Airlines. All Rights Reserved. | Terms & Policy
+  </div>
+</footer>
+
+<!-- ==================== SIDEBAR SCRIPT ==================== -->
+<script src="js/script.js">
+</script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sky High - Flight Reservation System</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo"> <i f></i>Sky<span>High</span></a>
+ <div class="icons">
+   <a href="login.html" > <i class="fas fa-user-circle" title="Login"></i></a>
+    <i class="fas fa-bars" onclick="openMenu()" title="Menu"></i>
+  </div>
+
+  </header>
+
+  <!-- Sidebar Menu -->
+   <div id="sidebarMenu" class="sidebar">
+      <span class="closebtn" onclick="closeMenu()">
+  <i class="fa-solid fa-xmark"></i></span>
+    <a href="book.html"><i class="fas fa-plane-departure"></i> Book</a>
+    <a href="manage.html"><i class="fas fa-cog"></i> Manage</a>
+    <a href="experience.html"><i class="fas fa-globe"></i> Experience</a>
+    <a href="destination.html"><i class="fas fa-map-marked-alt"></i> Where We Fly</a>
+    <a href="loyalty.html"><i class="fas fa-gem"></i> Loyalty</a>
+    <a href="help.html"><i class="fas fa-question-circle"></i> Help</a>
+    <a href="feedback.html"><i class="fas fa-comment"></i> Leave Feedback</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 id="hero-title">Welcome to Sky High Airlines</h1>
+    <p id="hero-subtitle">Book your dream journey with comfort, speed, and trust. Explore the world — the Sky is the limit!</p>
+  </section>
+
+  <!-- Trip Details -->
+  <section class="trip-details">
+    <h2>Plan Your Trip</h2>
+      <!-- Trip Type -->
+    <div class="trip-options">
+       <label class="custom-radio">
+      <input type="radio" name="trip" value="one-way" onclick="changeTripType('one-way')">
+      <span class="radio-btn"></span>
+      One Way
+    </label>
+
+    <label class="custom-radio">
+      <input type="radio" name="trip" value="round-trip" onclick="changeTripType('round-trip')">
+      <span class="radio-btn"></span>
+      Round Trip
+    </label>
+
+    <label class="custom-radio">
+      <input type="radio" name="trip" value="multi-city" onclick="changeTripType('multi-city')">
+      <span class="radio-btn"></span>
+      Multi-City
+    </label>
+    </div>
+
+    <!-- Flight Search Form -->
+    <form action="search.html">
+        <div class="input-block">
+      <label>From:</label>
+      <select id="fromAirport" required onchange="checkvalidity()">
+        <option value="" disabled selected>Select Airport</option>
+        <option value="ISB">Islamabad International Airport (ISB)</option>
+        <option value="LHE">Allama Iqbal International Airport (LHE)</option>
+        <option value="KHI">Jinnah International Airport (KHI)</option>
+        <option value="DXB">Dubai International Airport (DXB)</option>
+        <option value="JFK">John F. Kennedy International Airport (JFK)</option>
+      </select>
+      </div>
+
+      <div class="input-block">
+      <label>To:</label>
+      <select id="toAirport" required onchange="checkvalidity()">
+        <option value="" disabled selected>Select Airport</option>
+        <option value="ISB">Islamabad International Airport (ISB)</option>
+        <option value="LHE">Allama Iqbal International Airport (LHE)</option>
+        <option value="KHI">Jinnah International Airport (KHI)</option>
+        <option value="DXB">Dubai International Airport (DXB)</option>
+        <option value="JFK">John F. Kennedy International Airport (JFK)</option>
+      </select>
+      </div>
+
+      <div class="input-block">
+      <label>Departure Date:</label>
+      <input type="date"  onchange="dat()" id="departDate" required >
+      </div>
+       <div class="input-block">
+                        <label for="passengers">Passengers</label>
+        
+  <select id="adultSelect" name="adult">
+    <option value="1">1 Adult</option>
+    <option value="2">2 Adults</option>
+    <option value="3">3 Adults</option>
+    <option value="4">4 Adults</option>
+    <option value="5">5 Adults</option>
+    <option value="6">6 Adults</option>
+  </select>
+</div>
+
+
+                    <div class="input-block">
+                        <label for="class">Class</label>
+                        <select id="class" required>
+                            <option value="economy">Economy</option>
+                            <option value="premium">Premium Economy</option>
+                            <option value="business">Business</option>
+                            <option value="first">First Class</option>
+                        </select>
+                    </div>
+
+      <div class="input-block" id="returnDateSection" style="display:none;">
+        <label>Return Date:</label>
+        <input type="date" id="returnDate" >
+      </div>
+
+      <div  class="input-block" id="multiCitySection" style="display:none;">
+        <label>Second Destination:</label>
+        <select id="to2">
+          <option value="" disabled selected>Select Airport</option>
+          <option value="ISB">Islamabad International Airport (ISB)</option>
+          <option value="LHE">Allama Iqbal International Airport (LHE)</option>
+          <option value="KHI">Jinnah International Airport (KHI)</option>
+          <option value="DXB">Dubai International Airport (DXB)</option>
+          <option value="JFK">John F. Kennedy International Airport (JFK)</option>
+        </select>
+      </div>
+      <div class="input-block">
+        <label>  .... </label>
+      <input type="submit" value="Search" >
+      </div>
+    </form>
+  </div>
+  
+    </div>
+    </section>
+  <!--  section of popular destination-->
+    <section class="destinations">
+  <h2>Popular Destinations</h2>
+  <div class="destination-cards">
+    <div class="card">
+      <img src="img/dubai.jpg" alt="Dubai Skyline">
+
+      <h3>Dubai</h3>
+      <p>Discover luxury and adventure in the heart of UAE.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&w=800" alt="London Bridge">
+
+      <h3>London</h3>
+      <p>Experience the charm and culture of England’s capital.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.pexels.com/photos/1797121/pexels-photo-1797121.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Istanbul City">
+
+      <h3>Istanbul</h3>
+      <p>Where East meets West — explore the beauty of Turkey.</p>
+    </div>
+
+     <div class="card">
+      <img src="img/makhaa.jpeg" alt="Makkah">
+      <h3>Makkah</h3>
+      <p>Experience spiritual peace and visit the holy Kaaba.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- chose us why-->
+ <section class="why-choose">
+  <h2>Why Choose SkyHigh Airlines?</h2>
+  <div class="features">
+    <div class="feature">
+      <i class="fa-solid fa-plane"></i>
+      <h4>Global Network</h4>
+      <p>Fly to over 100 destinations around the world.</p>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-money-bill-wave"></i>
+      <h4>Affordable Fares</h4>
+      <p>We provide the best value for your travel budget.</p>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-headset"></i>
+      <h4>24/7 Customer Support</h4>
+      <p>Our support team is always ready to assist you.</p>
+    </div>
+  </div>
+</section>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <a href="#">Company Info</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+      </div>
+      <div class="footer-column">
+        <h3>Help</h3>
+        <a href="#">FAQs</a>
+        <a href="#">Customer Support</a>
+        <a href="#">Booking Guide</a>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <div class="social-icons">
+          <div class="social-icons">
+   <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Sky High Airlines. All Rights Reserved. | Terms & Policy</p>
+    </div>
+  </footer>
+
+  <!-- JS for Sidebar -->
+  <script src="js/script.js"> </script>
+  <script src="/script.js"> </script>
+</body>
+</html>

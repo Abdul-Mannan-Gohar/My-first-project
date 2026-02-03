@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyHigh | Where We Fly</title>
+  <link rel="stylesheet" href="css/destination.css">
+  <script src="destinations.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+   <header>
+    <a href="index.html" class="logo"> <i f></i>Sky<span>High</span></a>
+ <div class="icons">
+   <a href="login.html" > <i class="fas fa-user-circle" title="Login"></i></a>
+    <i class="fas fa-bars" onclick="openMenu()" title="Menu"></i>
+  </div>
+</div>
+
+  </header>
+
+  <!-- Sidebar Menu -->
+  <div id="sidebarMenu" class="sidebar">
+      <span class="closebtn" onclick="closeMenu()">
+  <i class="fa-solid fa-xmark"></i></span>
+       <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="book.html"><i class="fas fa-plane-departure"></i> Book</a>
+        <a href="#"><i class="fa-solid fa-gear"></i> Manage</a>
+        <a href="loyalty.html"><i class="fa-solid fa-star"></i> Loyalty</a>
+        <a href="#"><i class="fa-solid fa-circle-question"></i> Help</a>
+        <a href="feedback.html"><i class="fa-solid fa-comments"></i> Leave Feedback</a>
+  </div>
+
+
+  <!-- Search Bar -->
+  <section class="search-section">
+    <h2>Search your Destination</h2>
+  <div class="search-bar">
+  <input type="text" id="searchBar" placeholder="Search destination...">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</div>
+  </section>
+
+  <!-- Destinations Grid -->
+  <section id="destinations-container" class="destinations-container">
+    <!-- Cards will be loaded here via JS -->
+  </section>
+
+  <!-- Footer -->
+   <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <a href="#">Company Info</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+      </div>
+      <div class="footer-column">
+        <h3>Help</h3>
+        <a href="#">FAQs</a>
+        <a href="#">Customer Support</a>
+        <a href="#">Booking Guide</a>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <div class="social-icons">
+          <div class="social-icons">
+   <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Sky High Airlines. All Rights Reserved. | Terms & Policy</p>
+    </div>
+  </footer>
+  <script src="js/destination.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
